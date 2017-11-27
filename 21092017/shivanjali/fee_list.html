@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Shivanjali </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font CSS-->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> -->
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Google fonts - Roboto -->
+  <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700"> -->
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- jQuery Circle-->
+  <link rel="stylesheet" href="css/grasp_mobile_progress_circle-1.0.0.min.css">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/student.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="images/fav-icon.png">
+  <!-- Font Awesome CDN-->
+  <!-- you can replace it by local Font Awesome-->
+ <!--  <script src="https://use.fontawesome.com/99347ac47f.js"></script> -->
+</head>
+
+<body>
+    <!-- Side Navbar -->
+     <nav class="side-navbar">
+      <div class="side-navbar-wrapper">
+        <div class="sidenav-header d-flex align-items-center justify-content-center">
+          <img src="images/logo-sidebar.png" alt="person">
+        </div>
+        <div class="main-menu">
+          <ul id="side-main-menu" class="side-menu list-unstyled">                  
+            <li><a href="index.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>Dashboard</span></a></li>
+            <li> <a href="sms.html"><i class="fa fa-envelope-open" aria-hidden="true"></i><span>Sms</span></a></li>
+            <li> <a href="#fee-detail" data-toggle="collapse" aria-expanded="false"><i class="fa fa-tags" aria-hidden="true"></i><span> Fees Details</span>
+                <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div></a>
+              <ul id="fee-detail" class="collapse list-unstyled">
+                <li> <a href="registration-fee.html">Registration Fee</a></li>
+                <li> <a href="generate-fee.html">Generate Fee</a></li>
+                <li class="active"> <a href="fee_list.html">Fee list</a></li>
+                <li> <a href="Consolidate_data.html">Consolidate Data</a></li>
+                <li> <a href="fee-due-list.html">Fee Due List</a></li>
+                <li> <a href="advance_payment.html">Advance Payments</a></li>
+              </ul>
+            </li>
+            <li> <a href="#course" data-toggle="collapse" aria-expanded="false"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Courses </span>
+                <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div></a>
+              <ul id="course" class="collapse list-unstyled">
+                <li> <a href="course-list.html">Course List</a></li>
+                <li> <a href="course-fee-list-new.html">Course Fee list</a></li>
+              </ul>
+            </li>
+            <li> <a href="teachers.html"><i class="fa fa-address-book-o" aria-hidden="true"></i><span>Teachers</span></a></li>
+            <li> <a href="students.html"><i class="fa fa-user" aria-hidden="true"></i><span>Students</span></a></li>
+            <li> <a href="#pages-nav-list" data-toggle="collapse" aria-expanded="false"><i class="fa fa-file-text" aria-hidden="true"></i><span>Daily Summary</span>
+                <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div></a>
+              <ul id="pages-nav-list" class="collapse list-unstyled">
+                <li> <a href="fee-details.html">Fee Deatails</a></li>
+                <li> <a href="stud-reg-deatails.html">Stud Reg Deatails</a></li>
+                <li> <a href="report.html">Report</a></li> 
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <div class="page home-page pad-bottom">
+    <!-- navbar-->
+    <header class="header">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <div class="navbar-header"><a id="toggle-btn" href="#" class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></a><a href="index.html" class="navbar-brand">
+                  <div class="brand-text hidden-sm-down"><strong class="text-primary">Temple Of Fine Atrs</strong></div></a></div>
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-cog" aria-hidden="true"></i><!--  -->
+                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                    
+                    <li><a rel="nofollow" href="#change-password" class="dropdown-item" data-toggle="modal"><div class="notification d-flex justify-content-between">
+                    <div class="notification-content"><i class="fa fa-key" aria-hidden="true"></i>Change Password </div></a></li>
+
+                    <li><a rel="nofollow" href="#email-id" class="dropdown-item" data-toggle="modal" > 
+                    <div class="notification d-flex justify-content-between"><div class="notification-content"><i class="fa fa-envelope"></i>Master E-mail Id</div></a></li>
+                  </ul>
+                </li>   
+                <li class="nav-item"><a href="login.html" class="nav-link logout"><i class="fa fa-power-off" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!--  popup -->
+      <div class="headerpopup">
+<div class="modal fade" id="change-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Change User Name & Password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body ch-passwrd">
+        <div class="row form-group">
+            <label for="example-text-input" class="col-md-5 col-form-label">Current Username</label>
+            <input class="form-control col-md-7" type="text" value="" id="example-text-input">       
+        </div>
+        <div class="row form-group">
+            <label for="example-text-input" class="col-md-5 col-form-label">New Username</label>
+            <input class="form-control col-md-7" type="text" value="" id="example-text-input">       
+        </div>
+        <div class="row form-group">
+            <label for="example-text-input" class="col-md-5 col-form-label">Confirm Username</label>
+            <input class="form-control col-md-7" type="text" value="" id="example-text-input">       
+        </div>
+        <div class="row form-group">
+            <label for="example-text-input" class="col-md-5 col-form-label">Current Password</label>
+            <input class="form-control col-md-7" type="text" value="" id="example-text-input">       
+        </div>
+        <div class="row form-group">
+            <label for="example-text-input" class="col-md-5 col-form-label">New Password</label>
+            <input class="form-control col-md-7" type="text" value="" id="example-text-input">       
+        </div>
+        <div class="row form-group">
+            <label for="example-text-input" class="col-md-5 col-form-label">Confirm Password</label>
+            <input class="form-control col-md-7" type="text" value="" id="example-text-input">       
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info">Submit</button> 
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Clear</button>               
+      </div>
+    </div>
+  </div>
+</div>  
+
+<div class="modal fade" id="email-id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content em-id">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Master E-mail ID</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class=" row form-group">
+    <label for="exampleInputEmail1" class="col-md-4">Email ID</label>
+    <input type="email" class="form-control col-md-8" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info">Submit</button>        
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+<!--  popup ends -->
+
+    <section class="col-lg-9 statistics section-padding section-no-padding-bottom section_top">
+      <div class="container-fluid container_overflow_scroll">
+        <header>
+          <h1 class="title_h1">
+                Fee List &nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target=""><i class="fa fa-plus-circle" aria-hidden="true"></i> Add New</button>
+                <p class="p_tag">
+                  <button type="button" class="btn btn-link btn-sm">Check All</button>
+                  <button type="button" class="btn btn-link btn-sm">Un Check All</button>
+                  <button type="button" class="btn btn-info btn-sm"><i class="fa fa-chevron-right" aria-hidden="true"></i> Proceed</button>
+                </p>
+              </h1>
+        </header>
+        <div class="row d-flex align-items-stretch card_mrgn">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-block fee-list-field">
+                <div id="fee_list" class="card_info">
+                  <div class="row">
+                    <div class="col-lg-4 card_inner_td1">
+                      <div class="td_inner_i">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>May,2017</span>
+                        <i class="fa fa-phone fa_pad" aria-hidden="true"></i>
+                        <span>9597961564</span>
+                      </div>
+                      <h3>NIKITHA VENKATRAGAVAN</h3>
+                      <p>Reg.No: 2094</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Roll No: 2304</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>Status:&nbsp;<span class="no_status">No</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 card_inner_td2">
+                      <h1 class="td_inner_i">Course Details</h1>
+                      <h2>GUITAR</h2>
+                      <p>Teacher: Mr. Pradeep</p>
+                      <p>Level: 4</p>
+                      <p>Type: reg</p>
+                    </div>
+                    <div class="col-lg-4 card_inner_col3">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h1>Total Fees</h1>
+                          <h2>500.00</h2>
+                          <br>
+                          <h1>Waver</h1>
+                          <input type="text">
+                        </div>
+                        <div class="col-lg-6 pay_mode">
+                          <h1>Rs
+                            <input type="checkbox" name="checkboxG1" class="css-checkbox" id="checkboxG1">
+                            <label for="checkboxG1" class="css-label"></label>
+                          </h1>
+                          <h2>500.00</h2>
+                          <button class="btn btn-warning">Pay Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-stretch card_mrgn">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-block fee-list-field">
+                <div id="fee_list" class="card_info">
+                  <div class="row">
+                    <div class="col-lg-4 card_inner_td1">
+                      <div class="td_inner_i">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>May,2017</span>
+                        <i class="fa fa-phone fa_pad" aria-hidden="true"></i>
+                        <span>9597961564</span>
+                      </div>
+                      <h3>NIKITHA VENKATRAGAVAN</h3>
+                      <p>Reg.No: 2094</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Roll No: 2304</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>Status:&nbsp;<span class="paid_status">Paid</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 card_inner_td2">
+                      <h1 class="td_inner_i">Course Details</h1>
+                      <h2>GUITAR</h2>
+                      <p>Teacher: Mr. Pradeep</p>
+                      <p>Level: 4</p>
+                      <p>Type: reg</p>
+                    </div>
+                    <div class="col-lg-4 card_inner_col3">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h1>Total Fees</h1>
+                          <h2>500.00</h2>
+                          <br>
+                          <h1>Waver</h1>
+                          <input type="text">
+                        </div>
+                        <div class="col-lg-6 pay_mode">
+                          <h1>Rs
+                            <input type="checkbox" name="checkboxG1" class="css-checkbox" id="checkboxG1">
+                            <label for="checkboxG1" class="css-label"></label>
+                          </h1>
+                          <h2>500.00</h2>
+                          <button class="btn btn-success">Paid</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-stretch card_mrgn">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-block fee-list-field">
+                <div id="fee_list" class="card_info">
+                  <div class="row">
+                    <div class="col-lg-4 card_inner_td1">
+                      <div class="td_inner_i">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>May,2017</span>
+                        <i class="fa fa-phone fa_pad" aria-hidden="true"></i>
+                        <span>9597961564</span>
+                      </div>
+                      <h3>NIKITHA VENKATRAGAVAN</h3>
+                      <p>Reg.No: 2094</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Roll No: 2304</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>Status:&nbsp;<span class="no_status">No</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 card_inner_td2">
+                      <h1 class="td_inner_i">Course Details</h1>
+                      <h2>GUITAR</h2>
+                      <p>Teacher: Mr. Pradeep</p>
+                      <p>Level: 4</p>
+                      <p>Type: reg</p>
+                    </div>
+                    <div class="col-lg-4 card_inner_col3">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h1>Total Fees</h1>
+                          <h2>500.00</h2>
+                          <br>
+                          <h1>Waver</h1>
+                          <input type="text">
+                        </div>
+                        <div class="col-lg-6 pay_mode">
+                          <h1>Rs
+                            <input type="checkbox" name="checkboxG1" class="css-checkbox" id="checkboxG1">
+                            <label for="checkboxG1" class="css-label"></label>
+                          </h1>
+                          <h2>500.00</h2>
+                          <button class="btn btn-warning">Pay Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-stretch card_mrgn">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-block fee-list-field">
+                <div id="fee_list" class="card_info">
+                  <div class="row">
+                    <div class="col-lg-4 card_inner_td1">
+                      <div class="td_inner_i">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>May,2017</span>
+                        <i class="fa fa-phone fa_pad" aria-hidden="true"></i>
+                        <span>9597961564</span>
+                      </div>
+                      <h3>NIKITHA VENKATRAGAVAN</h3>
+                      <p>Reg.No: 2094</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Roll No: 2304</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>Status:&nbsp;<span class="no_status">No</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 card_inner_td2">
+                      <h1 class="td_inner_i">Course Details</h1>
+                      <h2>GUITAR</h2>
+                      <p>Teacher: Mr. Pradeep</p>
+                      <p>Level: 4</p>
+                      <p>Type: reg</p>
+                    </div>
+                    <div class="col-lg-4 card_inner_col3">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h1>Total Fees</h1>
+                          <h2>500.00</h2>
+                          <br>
+                          <h1>Waver</h1>
+                          <input type="text">
+                        </div>
+                        <div class="col-lg-6 pay_mode">
+                          <h1>Rs
+                            <input type="checkbox" name="checkboxG1" class="css-checkbox" id="checkboxG1">
+                            <label for="checkboxG1" class="css-label"></label>
+                          </h1>
+                          <h2>500.00</h2>
+                          <button class="btn btn-warning">Pay Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-stretch card_mrgn">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-block fee-list-field">
+                <div id="fee_list" class="card_info">
+                  <div class="row">
+                    <div class="col-lg-4 card_inner_td1">
+                      <div class="td_inner_i">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>May,2017</span>
+                        <i class="fa fa-phone fa_pad" aria-hidden="true"></i>
+                        <span>9597961564</span>
+                      </div>
+                      <h3>NIKITHA VENKATRAGAVAN</h3>
+                      <p>Reg.No: 2094</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Roll No: 2304</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>Status:&nbsp;<span class="no_status">No</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 card_inner_td2">
+                      <h1 class="td_inner_i">Course Details</h1>
+                      <h2>GUITAR</h2>
+                      <p>Teacher: Mr. Pradeep</p>
+                      <p>Level: 4</p>
+                      <p>Type: reg</p>
+                    </div>
+                    <div class="col-lg-4 card_inner_col3">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h1>Total Fees</h1>
+                          <h2>500.00</h2>
+                          <br>
+                          <h1>Waver</h1>
+                          <input type="text">
+                        </div>
+                        <div class="col-lg-6 pay_mode">
+                          <h1>Rs
+                            <input type="checkbox" name="checkboxG1" class="css-checkbox" id="checkboxG1">
+                            <label for="checkboxG1" class="css-label"></label>
+                          </h1>
+                          <h2>500.00</h2>
+                          <button class="btn btn-warning">Pay Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-stretch card_mrgn">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-block fee-list-field">
+                <div id="fee_list" class="card_info">
+                  <div class="row">
+                    <div class="col-lg-4 card_inner_td1">
+                      <div class="td_inner_i">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>May,2017</span>
+                        <i class="fa fa-phone fa_pad" aria-hidden="true"></i>
+                        <span>9597961564</span>
+                      </div>
+                      <h3>NIKITHA VENKATRAGAVAN</h3>
+                      <p>Reg.No: 2094</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Roll No: 2304</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>Status:&nbsp;<span class="no_status">No</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 card_inner_td2">
+                      <h1 class="td_inner_i">Course Details</h1>
+                      <h2>GUITAR</h2>
+                      <p>Teacher: Mr. Pradeep</p>
+                      <p>Level: 4</p>
+                      <p>Type: reg</p>
+                    </div>
+                    <div class="col-lg-4 card_inner_col3">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h1>Total Fees</h1>
+                          <h2>500.00</h2>
+                          <br>
+                          <h1>Waver</h1>
+                          <input type="text">
+                        </div>
+                        <div class="col-lg-6 pay_mode">
+                          <h1>Rs
+                            <input type="checkbox" name="checkboxG1" class="css-checkbox" id="checkboxG1">
+                            <label for="checkboxG1" class="css-label"></label>
+                          </h1>
+                          <h2>500.00</h2>
+                          <button class="btn btn-warning">Pay Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-stretch card_mrgn">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-block fee-list-field">
+                <div id="fee_list" class="card_info">
+                  <div class="row">
+                    <div class="col-lg-4 card_inner_td1">
+                      <div class="td_inner_i">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>May,2017</span>
+                        <i class="fa fa-phone fa_pad" aria-hidden="true"></i>
+                        <span>9597961564</span>
+                      </div>
+                      <h3>NIKITHA VENKATRAGAVAN</h3>
+                      <p>Reg.No: 2094</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Roll No: 2304</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>Status:&nbsp;<span class="paid_status">Paid</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 card_inner_td2">
+                      <h1 class="td_inner_i">Course Details</h1>
+                      <h2>GUITAR</h2>
+                      <p>Teacher: Mr. Pradeep</p>
+                      <p>Level: 4</p>
+                      <p>Type: reg</p>
+                    </div>
+                    <div class="col-lg-4 card_inner_col3">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h1>Total Fees</h1>
+                          <h2>500.00</h2>
+                          <br>
+                          <h1>Waver</h1>
+                          <input type="text">
+                        </div>
+                        <div class="col-lg-6 pay_mode">
+                          <h1>Rs
+                            <input type="checkbox" name="checkboxG1" class="css-checkbox" id="checkboxG1">
+                            <label for="checkboxG1" class="css-label"></label>
+                          </h1>
+                          <h2>500.00</h2>
+                          <button class="btn btn-success">Paid</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-stretch card_mrgn">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-block fee-list-field">
+                <div id="fee_list" class="card_info">
+                  <div class="row">
+                    <div class="col-lg-4 card_inner_td1">
+                      <div class="td_inner_i">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>May,2017</span>
+                        <i class="fa fa-phone fa_pad" aria-hidden="true"></i>
+                        <span>9597961564</span>
+                      </div>
+                      <h3>NIKITHA VENKATRAGAVAN</h3>
+                      <p>Reg.No: 2094</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Roll No: 2304</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>Status:&nbsp;<span class="no_status">No</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 card_inner_td2">
+                      <h1 class="td_inner_i">Course Details</h1>
+                      <h2>GUITAR</h2>
+                      <p>Teacher: Mr. Pradeep</p>
+                      <p>Level: 4</p>
+                      <p>Type: reg</p>
+                    </div>
+                    <div class="col-lg-4 card_inner_col3">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h1>Total Fees</h1>
+                          <h2>500.00</h2>
+                          <br>
+                          <h1>Waver</h1>
+                          <input type="text">
+                        </div>
+                        <div class="col-lg-6 pay_mode">
+                          <h1>Rs
+                            <input type="checkbox" name="checkboxG1" class="css-checkbox" id="checkboxG1">
+                            <label for="checkboxG1" class="css-label"></label>
+                          </h1>
+                          <h2>500.00</h2>
+                          <button class="btn btn-warning">Pay Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-stretch card_mrgn">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-block fee-list-field">
+                <div id="fee_list" class="card_info">
+                  <div class="row">
+                    <div class="col-lg-4 card_inner_td1">
+                      <div class="td_inner_i">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>May,2017</span>
+                        <i class="fa fa-phone fa_pad" aria-hidden="true"></i>
+                        <span>9597961564</span>
+                      </div>
+                      <h3>NIKITHA VENKATRAGAVAN</h3>
+                      <p>Reg.No: 2094</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Roll No: 2304</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>Status:&nbsp;<span class="no_status">No</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 card_inner_td2">
+                      <h1 class="td_inner_i">Course Details</h1>
+                      <h2>GUITAR</h2>
+                      <p>Teacher: Mr. Pradeep</p>
+                      <p>Level: 4</p>
+                      <p>Type: reg</p>
+                    </div>
+                    <div class="col-lg-4 card_inner_col3">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h1>Total Fees</h1>
+                          <h2>500.00</h2>
+                          <br>
+                          <h1>Waver</h1>
+                          <input type="text">
+                        </div>
+                        <div class="col-lg-6 pay_mode">
+                          <h1>Rs
+                            <input type="checkbox" name="checkboxG1" class="css-checkbox" id="checkboxG1">
+                            <label for="checkboxG1" class="css-label"></label>
+                          </h1>
+                          <h2>500.00</h2>
+                          <button class="btn btn-warning">Pay Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-stretch card_mrgn">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-block fee-list-field">
+                <div id="fee_list" class="card_info">
+                  <div class="row">
+                    <div class="col-lg-4 card_inner_td1">
+                      <div class="td_inner_i">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>May,2017</span>
+                        <i class="fa fa-phone fa_pad" aria-hidden="true"></i>
+                        <span>9597961564</span>
+                      </div>
+                      <h3>NIKITHA VENKATRAGAVAN</h3>
+                      <p>Reg.No: 2094</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Roll No: 2304</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>Status:&nbsp;<span class="no_status">No</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 card_inner_td2">
+                      <h1 class="td_inner_i">Course Details</h1>
+                      <h2>GUITAR</h2>
+                      <p>Teacher: Mr. Pradeep</p>
+                      <p>Level: 4</p>
+                      <p>Type: reg</p>
+                    </div>
+                    <div class="col-lg-4 card_inner_col3">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h1>Total Fees</h1>
+                          <h2>500.00</h2>
+                          <br>
+                          <h1>Waver</h1>
+                          <input type="text">
+                        </div>
+                        <div class="col-lg-6 pay_mode">
+                          <h1>Rs
+                            <input type="checkbox" name="checkboxG1" class="css-checkbox" id="checkboxG1">
+                            <label for="checkboxG1" class="css-label"></label>
+                          </h1>
+                          <h2>500.00</h2>
+                          <button class="btn btn-warning">Pay Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <nav aria-label="Page navigation example" id="page_slider">
+          <h1>Page 1 0f 5  
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5..</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul></h1>
+        </nav>                                
+      </div>
+    </section>
+    <div class="col-lg-3 right_sidebar_bg">
+      <h1 class="multi_search"><i class="fa fa-search" aria-hidden="true"></i> Multi Search</h1>
+
+          <div class="dropdown_pad">
+            <input type="text" name="" placeholder="Reg No">
+          </div>
+          <div class="dropdown_pad">
+            <input type="text" name="" placeholder="Name">
+          </div>
+          <div class="dropdown_pad">
+            <input type="text" name="" placeholder="Roll No">
+          </div>
+          <div class="dropdown_pad">
+            <input type="text" name="" placeholder="Mobile No">
+          </div>
+          <div class="dropdown dropdown_pad">
+            <button class="btn btn-secondary btn_search dropdown-toggle" type="button" data-toggle="dropdown">Status
+              <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+            <ul class="dropdown-menu">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="dropdown dropdown_pad">
+            <button class="btn btn-secondary btn_search dropdown-toggle" type="button" data-toggle="dropdown">Subject
+              <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+            <ul class="dropdown-menu">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="dropdown dropdown_pad">
+            <button class="btn btn-secondary btn_search dropdown-toggle" type="button" data-toggle="dropdown">Month
+              <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+            <ul class="dropdown-menu">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="dropdown dropdown_pad">
+            <button class="btn btn-secondary btn_search dropdown-toggle" type="button" data-toggle="dropdown">Year
+              <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+            <ul class="dropdown-menu">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>                                                                      
+      <button class="btn btn-info btn_filter btn_top"> Search</button>
+
+    </div>
+
+
+      <footer class="main-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <p> <i class="fa fa-copyright" aria-hidden="true"></i>2015-SHIVANJALI</p>
+            </div>
+            <div class="col-sm-6 text-right">
+              <p>Developed by<a href="https://altiussolutions.com" class="external">Altius Solutions</a></p>
+             </div>
+          </div>
+        </div>
+      </footer>
+  </div>
+
+  <!-- Javascript files-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/jquery.cookie.js">
+  </script>
+  <script src="js/grasp_mobile_progress_circle-1.0.0.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="js/charts-home.js"></script>
+  <script src="js/charts-custom.js"></script>
+  <script src="js/front.js"></script>
+</body>
+
+</html>

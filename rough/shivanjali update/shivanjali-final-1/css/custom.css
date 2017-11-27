@@ -1,0 +1,446 @@
+.feed-box, .recent-activities{
+	border: none;
+  background: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+.form_tabs .nav-link{
+	    font-size: 15px;
+    padding: 10px 10px;
+    color: #464a4c;
+}
+
+.form_tabs .nav-link.active{
+	    color: #f7941e;
+}
+.form_tabs .tab-pane{
+	padding-top:20px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #f58632;
+    border-color: #f58632;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #7d7d7d;
+    border-color: #7d7d7d;
+}
+.machine-registration .select select {
+	font-size: 18px!important;
+}
+.machine img{
+    width: 146px;
+    height: 97px;
+    text-align: center;
+}
+.machine{
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.home-page.active nav.navbar{
+    width: calc(100% - 68px);
+}
+
+.shrink .sidenav-header img {
+  width: inherit;
+  margin-left: 156px;
+}
+.entry_time{
+    font-size: 13px;
+    margin-top: 6px;
+}
+.entry_time span{
+    font-weight: bold;
+}
+.activities_table{
+    height: 215px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.dot_mrgn{
+    margin-top: 3px;
+}
+.status_list{
+    list-style: none;
+}
+.status_list li{
+    padding: 9px 0px!important;
+}
+.status_list span{
+        float: right;
+    padding: 8px;
+    color: #fff!important;
+    border-radius: 30px;
+    background: #f7941e;
+    font-weight: 800!important;
+}
+.status_card{
+    padding: 5px!important;
+}
+.select_holder{
+    background: #fff;
+}
+.card_status{
+    margin-bottom: 20px;
+}
+.status_list li{
+    font-size: 15px;
+}
+.table_margin{
+    margin-top: 30px;
+}
+.login-page .form-outer, .register-page .form-outer{
+    max-width:700px;
+}
+.login-page form input, .register-page form input {
+    border-radius: 30px;
+    margin-right: 10px;
+    padding: 10px 30px;
+    color: #333;
+    font-weight: 300;
+    border: 1px solid #ddd;
+    margin-top: 0px;
+}
+.btn-block{
+    border-radius: 30px;
+    padding: 7px;
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    margin-top: 30px;
+}
+.login-page .form-inner, .register-page .form-inner{
+    border-radius: 30px;
+}
+.form-inner .prag {
+    font-size: 18pt;
+    font-style: semiblod !important;
+    font-weight:sharp !important;
+    color: #444444;
+    border-bottom: 1px solid #444444;
+    padding-bottom: 25px;
+}
+.login-page .std-arangetrams p{
+   font-size: 30px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-top: 25px;
+    color: #828282;
+}
+.login-page .std-arangetrams span{
+    color: #cc1e27;
+    font-weight: 600;
+    text-align: center;
+    font-size: 70px;
+}
+.last-cont span{
+    color: #cc1e27;
+}
+.last-cont {
+    margin-top: 10px;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height:20px !important;
+    letter-spacing: 2px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.text-center {
+    text-align: left !important;
+}
+.logo img{
+    padding-bottom: 20px !important;
+}
+.logo:after{
+   position: absolute;
+    content: '';
+    width: 77px;
+    height: 1px;
+    border-bottom: 1px solid #5c5c5c;
+    top: 155px;
+    left: 100px;
+}
+
+.login-page .border{
+    border-right: 2px  solid #f2f2f2;
+}
+.login-page .form-inner{
+    padding:30px;
+}
+#login-form{
+    padding:15px;
+}
+nav.navbar a.menu-btn {
+    color: #f80000;
+    border: 2px solid #f60100;
+}
+nav.navbar a.menu-btn:hover{
+    background:#f80000;
+}
+nav.side-navbar li.active a{
+    background:#d0463d;
+}
+nav.side-navbar .sidenav-header img{
+    width:90%;
+}
+nav.side-navbar .sidenav-header{
+    background: #000;
+}
+nav.side-navbar a:focus, 
+nav.side-navbar a:hover, nav.side-navbar a[aria-expanded="true"]{
+     background:#cc1e27;
+}
+nav.side-navbar a:focus, 
+nav.side-navbar a:hover, nav.side-navbar a[aria-expanded="true"]{
+     background:#d0463d;
+}
+nav.side-navbar a[aria-expanded="false"] .arrow{
+    transform: rotate(270deg);
+}
+.container-fluid .display{
+    font-size: 30px !important;
+    font-weight: 500 !important;
+}
+.course-img1{
+    background: url("../images/dashboard-course.jpg") no-repeat;
+    height: 335px;
+    background-size: cover;
+}
+.align-items-stretch h1{
+    font-weight: 600 !important;
+    font-size: 20px !important;
+}
+.course-img2{
+    background: url("../images/dashboard-teacher.jpg") no-repeat;
+    height: 335px;
+    background-size: cover;
+}
+.course-img3{
+    background: url("../images/dashbord-students.jpg") no-repeat;
+    height: 335px;
+    background-size: cover;
+}
+.align-items-stretch .detail p{
+    color: #fff !important;
+    font-size: 80px !important;
+    padding-left: 55px;
+    padding-top: 75px;
+    font-weight: 300 !important;
+}
+.align-items-stretch .detail span{
+    color: #fff !important;
+    font-size: 22px !important;
+    padding-left: 55px;
+    font-weight: 400px !important;
+}
+.align-items-stretch .detail .btn{
+     margin-left: 55px !important;
+     color: #343333;
+     background-color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+.align-items-stretch .detail{
+line-height: 50px;
+}
+.align-items-center .display{
+    font-weight: 600 !important;
+    color: #343333;
+     font-size: 18px !important; 
+}
+nav.navbar .brand-text strong {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+.btn-danger{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+nav.side-navbar span {  
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+.section-padding th .fee-amt{
+    height: 80px !important;
+    width:80px !important;
+    background:#f8a030;
+    border-radius: 50px !important;
+    margin: 0 auto !important;
+}
+tr .fee-amt span{
+ font-size:18px !important;
+ font-weight: 600 !important;
+ color:#fff;
+ text-align: center;
+ padding-top: 27px !important;
+}
+tr .fee-amt p{
+font-size:12px !important;
+ font-weight: 600 !important;
+ color:#fff;
+ text-align:center; 
+}
+.table_front{
+    margin-top: auto;
+}
+.login-page .form-group h4:after{
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 1px;
+    border-bottom: 2px solid #cc1e27;
+    top: 51px;
+    left: 0px;
+}
+.login-page .form-group h4{
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 25px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #5c5b5b;
+    margin-bottom: 35px;
+}
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 2px transparent;
+}
+.login-page form, .register-page form{
+    margin: 0 auto;
+}
+.Login-footer{
+    font-size:16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.fa-pencil{
+    color: #d0463d;
+}
+.fa-circle{
+    color:  #469913;
+}
+.course-fee-list .card-a{
+    float: left;
+}
+.course-fee-list .h3_card{
+    text-align: center;
+
+}
+.course-fee-list .h3_card a{
+    margin-left: 0 !important;
+}
+.card-block .c-code{
+text-align: center;
+    margin-top: 10px;
+}
+.course-fee-list .first .btn-danger{
+    background: #f8a030;
+    border: 1px solid #f8a030;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+}
+.course-fee-list ul.nav.nav-tabs{
+    margin: auto 170px;
+}
+.course-fee-list .level-fee{
+    text-align: center;
+}
+.course-fee-list .tab-content .tbl-content{  
+    margin:25px auto 0;   
+}
+.course-fee-list .table-bordered{
+     background: #f6f6f6;
+}
+.course-fee-list .card .first .nav-item .btn.active{
+    background: #d0463d;
+    border: 1px solid #d0463d;
+
+} 
+.daily-feeds .table-striped tbody tr:nth-of-type(odd){
+    background: #f2f2f2 !important;
+}
+.display .btn-secondary{
+    color: #cc1e27;
+    background-color: #fff;
+    border-color: transparent;
+    float: right;
+    font-size: 12px !important;
+    font-weight: 400;
+    border-radius: 15px;
+}  
+.course-list .card-block .card_info{
+    text-align: center;
+}
+.course-list .card_info .card-a1{
+    float:left;
+    mar
+}
+.course-list .card_info .card-a2{
+    float:right;
+}
+.course-list .card_info .ref{
+    margin-top: -25px;
+}
+.course-list .row_pad{
+    margin: 15px 50px 0px 50px;
+}
+.course-list .course_name{
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.course-list .cousre-list-tb th{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #434343;
+}
+.course-list .cousre-list-tb td{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+.course-list .card_info img{
+    vertical-align: middle;
+    height: 80px !important;
+    width: auto !important;
+
+}
+.course-list .show .modal-content .form-field{
+    margin: 10px;
+}
+.registration-fee .card .card-block{
+    padding: 15px;
+}
+.registration-fee .card .card-block a{
+    float:right;
+}
+nav.side-navbar li ul.collapse a{
+    border-left: 2px solid #d0463d;
+}
+.registration-fee .card .card-block .fee-details{
+    margin-top: 15px;
+}
+.registration-fee .fee-details .fee-amt span{
+color: #d0463d;
+}
+.registration-fee .fee-details .paid-date span{
+    font-weight: bold;
+}
+.registration-fee .show .modal-content .form-field{
+    margin: 10px;
+}
+.registration-fee .card .card-block .inactive{
+    color: #fff;
+    border:1px solid #c3bdbd;
+    border-radius: 15px;
+}

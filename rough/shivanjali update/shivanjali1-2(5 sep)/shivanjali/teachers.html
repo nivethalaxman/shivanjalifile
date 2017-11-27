@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yantra</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google fonts - Roboto -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- jQuery Circle-->
+    <link rel="stylesheet" href="css/grasp_mobile_progress_circle-1.0.0.min.css">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/student.css">    
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Font Awesome CDN-->
+    <!-- you can replace it by local Font Awesome-->
+    <script src="https://use.fontawesome.com/99347ac47f.js"></script>
+  </head>
+  <body>
+    <!-- Side Navbar -->
+    <nav class="side-navbar">
+      <div class="side-navbar-wrapper">
+        <div class="sidenav-header d-flex align-items-center justify-content-center">
+          <img src="images/logo-sidebar.png" alt="person">
+        </div>
+        <div class="main-menu">
+          <ul id="side-main-menu" class="side-menu list-unstyled">                  
+            <li class="active"><a href="index.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>Dashboard</span></a></li>
+            <li> <a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i><span>Sms</span></a></li>
+            <li> <a href="#"><i class="fa fa-tags" aria-hidden="true"></i><span> Fees Details</span>  <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div> </a></li>
+            <li> <a href="course-fee-list-new.html"> <i class="fa fa-graduation-cap" aria-hidden="true"></i><span> Courses</span>  <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div> </a></li>
+            <li> <a href="teachers.html"><i class="fa fa-address-book-o" aria-hidden="true"></i><span>Teachers</span>  <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div></a></li>
+            <li> <a href="students.html"><i class="fa fa-user" aria-hidden="true"></i><span>Students</span> <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div></a></li>
+            <li> <a href="#pages-nav-list" data-toggle="collapse" aria-expanded="false"><i class="fa fa-file-text" aria-hidden="true"></i><span>Daily Summary</span>
+                <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div></a>
+              <ul id="pages-nav-list" class="collapse list-unstyled">
+                <li> <a href="machine-registration.html">Machine</a></li>
+                <li> <a href="#">Shift</a></li>
+                <li> <a href="client-registration.html">Client</a></li>
+                <li> <a href="#">Job</a></li>
+                <li> <a href="#">User</a></li>
+                <li> <a href="#">Operator</a></li>
+                <li> <a href="#">Operator Allocation</a></li>
+                <li> <a href="#">Roles</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="page home-page">
+      <!-- navbar-->
+       <header class="header">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <div class="navbar-header"><a id="toggle-btn" href="#" class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i> </i></a><a href="index.html" class="navbar-brand">
+                  <div class="brand-text hidden-sm-down"><strong class="text-primary">Temple Of Fine Atrs</strong></div></a></div>
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-cog" aria-hidden="true"></i><span class="badge badge-warning">12</span></a>
+                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-envelope"></i>You have 6 new messages </div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-twitter"></i>You have 2 followers</div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-upload"></i>Server Rebooted</div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-twitter"></i>You have 2 followers</div>
+                          <div class="notification-time"><small>10 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong> <i class="fa fa-bell"></i>view all notifications                                            </strong></a></li>
+                  </ul>
+                </li>   
+                <li class="nav-item"><a href="login.html" class="nav-link logout"><i class="fa fa-power-off" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <section class="statistics section-padding section-no-padding-bottom section_top">
+        <div class="container-fluid">
+        <header> 
+            <h1 class="title_h1">
+              Teachers List &nbsp;&nbsp;&nbsp;
+              <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add New</button>
+              <p class="p_tag">Total no. of Teachers: 20</p>
+            </h1>
+          </header>
+          
+          <div class="row d-flex align-items-stretch">
+           <div class="col-lg-4">
+            <div class="card">
+                <div class="card-block">
+                  <h3 class="h3_card">MRS.VEDASRUTHI ANAND 
+                    <a href="">
+                      <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+                  </h3>
+                  <p class="reg_no">Reg.No: 2094</p>                  
+                    
+                  <div class="card_info">
+                  <p class="dob">DOB: 20 May, 1993 / DOJ: 23 Apr, 2017</p>
+
+                  <div class="row row_pad">
+                    <i class="fa fa-map-marker fa_address" aria-hidden="true"></i>
+                    <span class="address">316, SHRI SHRINE VIEW APARTMETNTS, E.B.COLONY, P.N.PUDUR POST, COIMBATORE - 641 041</span>
+                  </div>                  
+                  <div class="row row_pad">
+                    <i class="fa fa-phone fa_phn_bg" aria-hidden="true"></i>
+                    <span class="phn_no">9597961564</span>
+                  </div>
+                  <div class="row row_pad">
+                    <i class="fa fa-envelope fa_envelope_bg" aria-hidden="true"></i>
+                    <a class="mail">mahesmayzo@gmail.com</a>
+                  </div>
+                  </div>
+                    <section id="subject" class="first">
+                      <div class="">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#subject1" role="tab">GUITAR</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#subject2" role="tab">GUITAR</a>
+                          </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="subject1" role="tabpanel">
+                              <div class="table_brd">
+                                <div class="row row_pad2">
+                                  <table>
+                                    <tr>
+                                      <th>Reg Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>                                                              
+                                  </table>
+                                </div>                            
+                              </div>
+                          </div>
+                          <div class="tab-pane" id="subject2" role="tabpanel">
+                              <div class="table_brd">
+                                <div class="row row_pad2">
+                                  <table>
+                                    <tr>
+                                      <th>Reg Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>                                                              
+                                  </table>
+                                </div>                            
+                              </div>
+                          </div>                          
+
+                        </div>
+
+                      </div>
+                    </section>                
+
+                </div>
+              </div>
+            </div>
+
+           <div class="col-lg-4">
+            <div class="card">
+                <div class="card-block">
+                  <h3 class="h3_card">MRS.VEDASRUTHI ANAND 
+                    <a href="">
+                      <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+                  </h3>
+                  <p class="reg_no">Reg.No: 2094</p>                  
+                    
+                  <div class="card_info">
+                  <p class="dob">DOB: 20 May, 1993 / DOJ: 23 Apr, 2017</p>
+
+                  <div class="row row_pad">
+                    <i class="fa fa-map-marker fa_address" aria-hidden="true"></i>
+                    <span class="address">316, SHRI SHRINE VIEW APARTMETNTS, E.B.COLONY, P.N.PUDUR POST, COIMBATORE - 641 041</span>
+                  </div>                  
+                  <div class="row row_pad">
+                    <i class="fa fa-phone fa_phn_bg" aria-hidden="true"></i>
+                    <span class="phn_no">9597961564</span>
+                  </div>
+                  <div class="row row_pad">
+                    <i class="fa fa-envelope fa_envelope_bg" aria-hidden="true"></i>
+                    <a class="mail">mahesmayzo@gmail.com</a>
+                  </div>
+                  </div>
+                    <section id="subject" class="first">
+                      <div class="">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#subject1" role="tab">GUITAR</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#subject2" role="tab">GUITAR</a>
+                          </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="subject1" role="tabpanel">
+                              <div class="table_brd">
+                                <div class="row row_pad2">
+                                  <table>
+                                    <tr>
+                                      <th>Reg Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>                                                              
+                                  </table>
+                                </div>                            
+                              </div>
+                          </div>
+                          <div class="tab-pane" id="subject2" role="tabpanel">
+                              <div class="table_brd">
+                                <div class="row row_pad2">
+                                  <table>
+                                    <tr>
+                                      <th>Reg Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>                                                              
+                                  </table>
+                                </div>                            
+                              </div>
+                          </div>                          
+
+                        </div>
+
+                      </div>
+                    </section>                
+
+                </div>
+              </div>
+            </div>
+
+           <div class="col-lg-4">
+            <div class="card">
+                <div class="card-block">
+                  <h3 class="h3_card">MRS.VEDASRUTHI ANAND 
+                    <a href="">
+                      <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+                  </h3>
+                  <p class="reg_no">Reg.No: 2094</p>                  
+                    
+                  <div class="card_info">
+                  <p class="dob">DOB: 20 May, 1993 / DOJ: 23 Apr, 2017</p>
+
+                  <div class="row row_pad">
+                    <i class="fa fa-map-marker fa_address" aria-hidden="true"></i>
+                    <span class="address">316, SHRI SHRINE VIEW APARTMETNTS, E.B.COLONY, P.N.PUDUR POST, COIMBATORE - 641 041</span>
+                  </div>                  
+                  <div class="row row_pad">
+                    <i class="fa fa-phone fa_phn_bg" aria-hidden="true"></i>
+                    <span class="phn_no">9597961564</span>
+                  </div>
+                  <div class="row row_pad">
+                    <i class="fa fa-envelope fa_envelope_bg" aria-hidden="true"></i>
+                    <a class="mail">mahesmayzo@gmail.com</a>
+                  </div>
+                  </div>
+                    <section id="subject" class="first">
+                      <div class="">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#subject1" role="tab">GUITAR</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#subject2" role="tab">GUITAR</a>
+                          </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="subject1" role="tabpanel">
+                              <div class="table_brd">
+                                <div class="row row_pad2">
+                                  <table>
+                                    <tr>
+                                      <th>Reg Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>                                                              
+                                  </table>
+                                </div>                            
+                              </div>
+                          </div>
+                          <div class="tab-pane" id="subject2" role="tabpanel">
+                              <div class="table_brd">
+                                <div class="row row_pad2">
+                                  <table>
+                                    <tr>
+                                      <th>Reg Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>                                                              
+                                  </table>
+                                </div>                            
+                              </div>
+                          </div>                          
+
+                        </div>
+
+                      </div>
+                    </section>                
+
+                </div>
+              </div>
+            </div>            
+          </div>
+
+
+          <div class="row d-flex align-items-stretch">
+           <div class="col-lg-4">
+            <div class="card">
+                <div class="card-block">
+                  <h3 class="h3_card">MRS.VEDASRUTHI ANAND 
+                    <a href="">
+                      <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+                  </h3>
+                  <p class="reg_no">Reg.No: 2094</p>                  
+                    
+                  <div class="card_info">
+                  <p class="dob">DOB: 20 May, 1993 / DOJ: 23 Apr, 2017</p>
+
+                  <div class="row row_pad">
+                    <i class="fa fa-map-marker fa_address" aria-hidden="true"></i>
+                    <span class="address">316, SHRI SHRINE VIEW APARTMETNTS, E.B.COLONY, P.N.PUDUR POST, COIMBATORE - 641 041</span>
+                  </div>                  
+                  <div class="row row_pad">
+                    <i class="fa fa-phone fa_phn_bg" aria-hidden="true"></i>
+                    <span class="phn_no">9597961564</span>
+                  </div>
+                  <div class="row row_pad">
+                    <i class="fa fa-envelope fa_envelope_bg" aria-hidden="true"></i>
+                    <a class="mail">mahesmayzo@gmail.com</a>
+                  </div>
+                  </div>
+                    <section id="subject" class="first">
+                      <div class="">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#subject1" role="tab">GUITAR</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#subject2" role="tab">GUITAR</a>
+                          </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="subject1" role="tabpanel">
+                              <div class="table_brd">
+                                <div class="row row_pad2">
+                                  <table>
+                                    <tr>
+                                      <th>Reg Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>                                                              
+                                  </table>
+                                </div>                            
+                              </div>
+                          </div>
+                          <div class="tab-pane" id="subject2" role="tabpanel">
+                              <div class="table_brd">
+                                <div class="row row_pad2">
+                                  <table>
+                                    <tr>
+                                      <th>Reg Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>                                                              
+                                  </table>
+                                </div>                            
+                              </div>
+                          </div>                          
+
+                        </div>
+
+                      </div>
+                    </section>                
+
+                </div>
+              </div>
+            </div>
+
+           <div class="col-lg-4">
+            <div class="card">
+                <div class="card-block">
+                  <h3 class="h3_card">MRS.VEDASRUTHI ANAND 
+                    <a href="">
+                      <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+                  </h3>
+                  <p class="reg_no">Reg.No: 2094</p>                  
+                    
+                  <div class="card_info">
+                  <p class="dob">DOB: 20 May, 1993 / DOJ: 23 Apr, 2017</p>
+
+                  <div class="row row_pad">
+                    <i class="fa fa-map-marker fa_address" aria-hidden="true"></i>
+                    <span class="address">316, SHRI SHRINE VIEW APARTMETNTS, E.B.COLONY, P.N.PUDUR POST, COIMBATORE - 641 041</span>
+                  </div>                  
+                  <div class="row row_pad">
+                    <i class="fa fa-phone fa_phn_bg" aria-hidden="true"></i>
+                    <span class="phn_no">9597961564</span>
+                  </div>
+                  <div class="row row_pad">
+                    <i class="fa fa-envelope fa_envelope_bg" aria-hidden="true"></i>
+                    <a class="mail">mahesmayzo@gmail.com</a>
+                  </div>
+                  </div>
+                    <section id="subject" class="first">
+                      <div class="">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#subject1" role="tab">GUITAR</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#subject2" role="tab">GUITAR</a>
+                          </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="subject1" role="tabpanel">
+                              <div class="table_brd">
+                                <div class="row row_pad2">
+                                  <table>
+                                    <tr>
+                                      <th>Reg Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>                                                              
+                                  </table>
+                                </div>                            
+                              </div>
+                          </div>
+                          <div class="tab-pane" id="subject2" role="tabpanel">
+                              <div class="table_brd">
+                                <div class="row row_pad2">
+                                  <table>
+                                    <tr>
+                                      <th>Reg Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>                                                              
+                                  </table>
+                                </div>                            
+                              </div>
+                          </div>                          
+
+                        </div>
+
+                      </div>
+                    </section>                
+
+                </div>
+              </div>
+            </div>
+
+           <div class="col-lg-4">
+            <div class="card">
+                <div class="card-block">
+                  <h3 class="h3_card">MRS.VEDASRUTHI ANAND 
+                    <a href="">
+                      <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+                  </h3>
+                  <p class="reg_no">Reg.No: 2094</p>                  
+                    
+                  <div class="card_info">
+                  <p class="dob">DOB: 20 May, 1993 / DOJ: 23 Apr, 2017</p>
+
+                  <div class="row row_pad">
+                    <i class="fa fa-map-marker fa_address" aria-hidden="true"></i>
+                    <span class="address">316, SHRI SHRINE VIEW APARTMETNTS, E.B.COLONY, P.N.PUDUR POST, COIMBATORE - 641 041</span>
+                  </div>                  
+                  <div class="row row_pad">
+                    <i class="fa fa-phone fa_phn_bg" aria-hidden="true"></i>
+                    <span class="phn_no">9597961564</span>
+                  </div>
+                  <div class="row row_pad">
+                    <i class="fa fa-envelope fa_envelope_bg" aria-hidden="true"></i>
+                    <a class="mail">mahesmayzo@gmail.com</a>
+                  </div>
+                  </div>
+                    <section id="subject" class="first">
+                      <div class="">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#subject1" role="tab">GUITAR</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#subject2" role="tab">GUITAR</a>
+                          </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="subject1" role="tabpanel">
+                              <div class="table_brd">
+                                <div class="row row_pad2">
+                                  <table>
+                                    <tr>
+                                      <th>Reg Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>                                                              
+                                  </table>
+                                </div>                            
+                              </div>
+                          </div>
+                          <div class="tab-pane" id="subject2" role="tabpanel">
+                              <div class="table_brd">
+                                <div class="row row_pad2">
+                                  <table>
+                                    <tr>
+                                      <th>Reg Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Spl Lvl</th>
+                                      <td class="td_bg">5</td>
+                                      <td class="td_bg">4</td>
+                                      <td class="td_bg">3</td>
+                                      <td class="td_bg">2</td>
+                                      <td class="td_bg">1</td>
+                                    </tr>                                                              
+                                  </table>
+                                </div>                            
+                              </div>
+                          </div>                          
+
+                        </div>
+
+                      </div>
+                    </section>                
+
+                </div>
+              </div>
+            </div>            
+          </div>
+                    
+                  
+        </div>
+
+      </section>
+
+     
+      <footer class="main-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Yantra 2017-2018</p>
+            </div>
+            <div class="col-sm-6 text-right">
+              <p>Developed by<a href="https://altiussolutions.com" class="external">Altius Solutions</a></p>
+             </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <!-- Javascript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"> </script>
+    <script src="js/grasp_mobile_progress_circle-1.0.0.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="js/charts-home.js"></script>
+    <script src="js/charts-custom.js"></script>
+    <script src="js/front.js"></script>
+  </body>
+</html>

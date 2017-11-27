@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shivanjali</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google fonts - Roboto -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- jQuery Circle-->
+    <link rel="stylesheet" href="css/grasp_mobile_progress_circle-1.0.0.min.css">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Font Awesome CDN-->
+    <!-- you can replace it by local Font Awesome-->
+    <script src="https://use.fontawesome.com/99347ac47f.js"></script>
+  </head>
+  <body>
+    <!-- Side Navbar -->
+     <nav class="side-navbar">
+      <div class="side-navbar-wrapper">
+        <div class="sidenav-header d-flex align-items-center justify-content-center">
+          <img src="images/logo-sidebar.png" alt="person">
+        </div>
+        <div class="main-menu">
+          <ul id="side-main-menu" class="side-menu list-unstyled">                  
+            <li class="active"><a href="index.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>Dashboard</span></a></li>
+            <li> <a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i><span>Sms</span></a></li>
+            <li> <a href="#"><i class="fa fa-tags" aria-hidden="true"></i><span> Fees Details</span>  <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div> </a></li>
+            <li> <a href="course-fee-list-new.html"> <i class="fa fa-graduation-cap" aria-hidden="true"></i><span> Courses</span>  <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div> </a></li>
+            <li> <a href="teachers.html"><i class="fa fa-address-book-o" aria-hidden="true"></i><span>Teachers</span></a></li>
+            <li> <a href="students.html"><i class="fa fa-user" aria-hidden="true"></i><span>Students</span></a></li>
+            <li> <a href="#pages-nav-list" data-toggle="collapse" aria-expanded="false"><i class="fa fa-file-text" aria-hidden="true"></i><span>Daily Summary</span>
+                <div class="arrow pull-right"><i class="fa fa-angle-down"></i></div></a>
+              <ul id="pages-nav-list" class="collapse list-unstyled">
+                <li> <a href="machine-registration.html">Machine</a></li>
+                <li> <a href="#">Shift</a></li>
+                <li> <a href="client-registration.html">Client</a></li>
+                <li> <a href="#">Job</a></li>
+                <li> <a href="#">User</a></li>
+                <li> <a href="#">Operator</a></li>
+                <li> <a href="#">Operator Allocation</a></li>
+                <li> <a href="#">Roles</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="page home-page">
+      <!-- navbar-->
+      <header class="header">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <div class="navbar-header"><a id="toggle-btn" href="#" class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i> </i></a><a href="index.html" class="navbar-brand">
+                  <div class="brand-text hidden-sm-down"><strong class="text-primary">Temple Of Fine Atrs</strong></div></a></div>
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-cog" aria-hidden="true"></i><span class="badge badge-warning">12</span></a>
+                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-envelope"></i>You have 6 new messages </div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-twitter"></i>You have 2 followers</div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-upload"></i>Server Rebooted</div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-twitter"></i>You have 2 followers</div>
+                          <div class="notification-time"><small>10 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong> <i class="fa fa-bell"></i>view all notifications                                            </strong></a></li>
+                  </ul>
+                </li>   
+                <li class="nav-item"><a href="login.html" class="nav-link logout"><i class="fa fa-power-off" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="statistics section-padding section-no-padding-bottom section_top">
+        <div class="container-fluid">
+        <header> 
+            <h1 class="h3 display">Dashboard
+            <!-- <button type="button" class="btn btn-danger"><i class="fa fa-file-text" aria-hidden="true"></i> DB Backup</button> -->
+            </h1>
+          </header>
+          <div class="row d-flex align-items-stretch">
+            <div class="col-lg-4">
+              <!--course-->  
+            <div class="course-img1 detail">
+            <p>20</p>
+            <span>Courses </span> <br>
+            <button type="button" class="btn btn-success">Courses List</button>
+            </div>
+            </div>
+            
+            <div class="col-lg-4">
+              <!-- Teachers-->
+            <div class="course-img2 detail">
+            <p>42</p>
+            <span>Teachers</span><br>
+            <button type="button" class="btn btn-success">Teachers List</button>
+            </div>
+            </div>
+
+            <div class="col-lg-4">
+              <!-- Students-->
+            <div class="course-img3 detail">
+            <p>3848</p>
+            <span>Students</span><br>
+            <button type="button" class="btn btn-success">Students List</button>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- Updates Section -->
+      <section class="updates section-padding">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+            <header> 
+            <h1 class="h3 display">Generate Fee
+            </h1>
+          </header>
+              <div class="card">
+                <div class="card-block">
+                  <canvas id="lineChartExample"></canvas>
+                </div>
+              </div>
+            </div>
+            <!-- Daily Feed-->
+          </div>
+        </div>
+      </section>
+
+      </section>
+      <!-- Updates Section -->
+      <section class="updates section-padding">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Daily Feed-->
+            <div class="col-lg-8 col-md-6">
+            <header> 
+            <h1 class="h3 display">Advanced Payment list
+            </h1>
+          </header>
+              <div class="wrapper daily-feeds">
+                <div id="feeds-box" role="tabpanel" class="collapse show">
+                  <div class="feed-box card-block ">
+                    <table class="table table-striped table-sm table_front">
+                    <thead>
+                      <tr>
+                        <th>Roll No</th>                                         
+                        <th>Student Name </th>
+                        <th>Course</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Total Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>DN-2991 </td>
+                        <td> YASODHA.K</td>
+                        <td>BHARATHANATYAM </td> 
+                        <td>May,2017</td>
+                        <td>May,2017</td>
+                        <td>300.00</td> 
+                      </tr>
+                      <tr>
+                        <td>DN-2991 </td>
+                        <td> YASODHA.K</td>
+                        <td>BHARATHANATYAM </td> 
+                        <td>May,2017</td>
+                        <td>May,2017</td>
+                        <td>300.00</td> 
+                      </tr>
+                      <tr>
+                        <td>DN-2991 </td>
+                        <td> YASODHA.K</td>
+                        <td>BHARATHANATYAM </td> 
+                        <td>  May,2017   </td>
+                        <td>  May,2017 </td>
+                        <td> 300.00</td> 
+                      </tr>
+                      <tr>
+                        <td>DN-2991 </td>
+                        <td> YASODHA.K</td>
+                        <td>BHARATHANATYAM </td> 
+                        <td>May,2017</td>
+                        <td>May,2017</td>
+                        <td>300.00</td> 
+                      </tr>
+                      <tr>
+                        <td>DN-2991 </td>
+                        <td> YASODHA.K</td>
+                        <td>BHARATHANATYAM </td> 
+                        <td>May,2017</td>
+                        <td>May,2017</td>
+                        <td>300.00</td>  
+                      </tr>
+                      <tr> 
+                        <td>DN-2991 </td>
+                        <td> YASODHA.K</td>
+                        <td>BHARATHANATYAM </td> 
+                        <td>May,2017</td>
+                        <td>May,2017</td>
+                        <td>300.00</td> 
+                      </tr>
+                      <tr>
+                        <td>DN-2991 </td>
+                        <td>YASODHA.K</td>
+                        <td>BHARATHANATYAM </td> 
+                        <td>May,2017</td>
+                        <td>May,2017</td>
+                        <td>300.00</td> 
+                      </tr>
+                      <tr>
+                        <td>DN-2991 </td>
+                        <td>YASODHA.K</td>
+                        <td>BHARATHANATYAM </td> 
+                        <td>May,2017</td>
+                        <td>May,2017</td>
+                        <td>300.00</td> 
+                      </tr>
+                      <tr>
+                        <td>DN-2991 </td>
+                        <td>YASODHA.K</td>
+                        <td>BHARATHANATYAM </td> 
+                        <td>May,2017</td>
+                        <td>May,2017</td>
+                        <td>300.00</td> 
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Yantra 2017-2018</p>
+            </div>
+            <div class="col-sm-6 text-right">
+              <p>Developed by<a href="https://altiussolutions.com" class="external">Altius Solutions</a></p>
+             </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Javascript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"> </script>
+    <script src="js/grasp_mobile_progress_circle-1.0.0.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="js/charts-home.js"></script>
+    <script src="js/front.js"></script>
+  </body>
+</html>

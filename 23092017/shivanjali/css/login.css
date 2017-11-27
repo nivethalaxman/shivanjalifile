@@ -1,0 +1,24 @@
+.login-page1 .form-inner {
+    height: 520px!important;
+    width: 352px ;
+}
+.login-page1 .logo {
+    width: auto!important;
+    margin: 0 auto;
+    height: auto !important;
+}
+.login-page1 .logo img {
+    width: auto;
+}
+.login-page1 .logo::after {
+    position: absolute;
+    content: '';
+    width: 77px;
+    height: 1px;
+    border-bottom: 1px solid #5c5c5c;
+    top: 155px;
+    left: 100px;
+}
+.login-page1 form{
+    margin: 0 auto !important;
+}
